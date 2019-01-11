@@ -25,9 +25,6 @@ std::vector<room*> generate_rooms(int total_rooms){
     for (int i = 1; i<max;i++){
         new_location = false;
 
-
-
-
         //random the position for next room
         while (!new_location){
 
@@ -71,15 +68,12 @@ std::vector<room*> generate_rooms(int total_rooms){
         //make new room
         room* new_room = new room(i,base_x,base_y);
 
-
         //connect them
         base_room->add_edge(new_room);
         new_room->add_edge(base_room);
 
         //add new room to rooms vec
         rooms.push_back(new_room);
-
-
 
     }
     return rooms;

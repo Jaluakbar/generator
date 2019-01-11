@@ -21,18 +21,6 @@ public:
         y(y)
     {}
 
-    int get_id() const{
-        return id;
-    }
-
-    int get_x() const {
-        return x;
-    }
-
-    int get_y() const{
-        return y;
-    }
-
     void add_edge(room* r){
         std::cout << "added edge " << r->get_id() <<std::endl;
         connection.push_back(r);
@@ -49,5 +37,19 @@ public:
         }
         std::cout << std::endl ;
     }
+
+    int get_id() const{
+        return id;
+    }
+
+    int get_x() const {
+        return x;
+    }
+
+    int get_y() const{
+        return y;
+    }
+
+
 };
 #endif //GENERATOR_ROOM_HPP
