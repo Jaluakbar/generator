@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/ti-software/generator/door.hpp
+spot.hpp
+C:/ti-software/generator/spot.hpp
+room.hpp
+C:/ti-software/generator/room.hpp
+
+C:/ti-software/generator/generator.hpp
+room.hpp
+C:/ti-software/generator/room.hpp
+cstdlib
+-
+iostream
+-
+ctime
+-
+
+C:/ti-software/generator/main.cpp
+iostream
+-
+door.hpp
+C:/ti-software/generator/door.hpp
+room.hpp
+C:/ti-software/generator/room.hpp
+vector
+-
+generator.hpp
+C:/ti-software/generator/generator.hpp
+
+C:/ti-software/generator/room.hpp
+vector
+-
+door.hpp
+C:/ti-software/generator/door.hpp
+iostream
+-
+
+C:/ti-software/generator/spot.hpp
+
